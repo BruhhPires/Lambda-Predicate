@@ -25,6 +25,10 @@ public class Product {
 	public void setPrice(Double price) {
 		this.price = price;
 	}
+	
+	public static boolean staticProductPredicate(Product p) { // NO METODO STATICO PRECISAMOS INCLUIR O ARGUMENTO 
+		return p.getPrice() >=100;
+	}
 
 	@Override
 	public String toString() {
