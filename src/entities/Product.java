@@ -29,6 +29,10 @@ public class Product {
 	public static boolean staticProductPredicate(Product p) { // NO METODO STATICO PRECISAMOS INCLUIR O ARGUMENTO 
 		return p.getPrice() >=100;
 	}
+	
+	public boolean nonStaticProductPredicate() { // COMO NÃO É STATIC NÃO PRECISA DE ARGUMENTO E USA O PRODUTO DA CLASSE "price"
+		return price >=100;
+	}
 
 	@Override
 	public String toString() {
